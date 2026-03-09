@@ -1,53 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Aesthetic Auctions — Frontend
 
-## Getting Started
+A real-time auction web platform built with **Next.js 14**, featuring live bidding, user authentication, product search, and a rating system.
 
-First, run the development server:
+> **Full-stack project** · Frontend repo · [Backend repo →](https://github.com/merygon/Backend-App-Aesthetic)
+
+---
+
+## ✨ Features
+
+- 🔍 **Product search** with category filters and rating-based sorting
+- 💸 **Real-time auction system** with live bid updates
+- ⭐ **User rating system** — view and compare ratings across all users
+- 🔐 **Authentication** — login, registration, and session management
+- 📱 **Responsive design** — optimized for mobile and desktop
+- 🖼️ **Product detail pages** with image gallery and description
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 14 (App Router) |
+| Language | JavaScript (ES6+) |
+| Styling | CSS3, Flexbox/Grid |
+| Icons | FontAwesome, Flaticon |
+| Auth | Session-based via Django backend |
+| Version Control | Git & GitHub |
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/merygon/Subastas-Aesthetic.git
+cd Subastas-Aesthetic
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> ⚠️ Requires the [backend](https://github.com/merygon/Backend-App-Aesthetic) running on `localhost:8000`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🗂️ Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/              # Next.js App Router pages
+│   ├── page.js       # Home — search + categories
+│   ├── auctions/     # Auction listing + detail pages
+│   ├── auth/         # Login & registration
+│   └── users/        # User profiles & ratings
+├── components/       # Reusable UI components
+└── public/           # Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔗 Related
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Backend** (Django REST API): [Backend-App-Aesthetic](https://github.com/merygon/Backend-App-Aesthetic)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-## Tecnologías Utilizadas
-- **HTML5** - Estructura de la web
-- **CSS3 & Flexbox/Grid** - Diseño responsivo y estilización
-- **JavaScript (ES6)** - Interactividad y lógica del sitio
-- **FontAwesome & Flaticon** - Iconos y gráficos
-- **Git & GitHub** - Control de versiones y colaboración
+---
 
-## Funcionalidades Implementadas
-- Página principal con buscador y categorías.  
-- Sistema de subastas con pujas en tiempo real.  
-- Página de detalles de productos con imágenes y descripción.  
-- Diseño responsive optimizado para móviles.  
-- Gestión de usuarios con login y registro.
+## 👩‍💻 Authors
 
-## Autores
-- **María González Gómez** - [GitHub](https://github.com/merygon)
-- **David Tarrasa Puebla** - [GitHub](https://github.com/davidtarrasa)
+- María González Gómez · [GitHub](https://github.com/merygon)
+- David Tarrasa Puebla · [GitHub](https://github.com/davidtarrasa)
