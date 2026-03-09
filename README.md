@@ -2,7 +2,7 @@
 
 A real-time auction web platform built with **Next.js 14**, featuring live bidding, user authentication, product search, and a rating system.
 
-> **Full-stack project** · Frontend repo · [Backend repo →](https://github.com/merygon/Backend-App-Aesthetic)
+> **Full-stack project** · Frontend repo · [Backend repo →](https://github.com/merygon/Aesthetic-Auctions-Backend)
 
 ---
 
@@ -41,7 +41,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-> ⚠️ Requires the [backend](https://github.com/merygon/Backend-App-Aesthetic) running on `localhost:8000`
+> ⚠️ Requires the [backend](https://github.com/merygon/Aesthetic-Auctions-Backend) running on `localhost:8000`
 
 ---
 
@@ -62,7 +62,7 @@ src/
 
 ## 🔗 Related
 
-- **Backend** (Django REST API): [Backend-App-Aesthetic](https://github.com/merygon/Backend-App-Aesthetic)
+- **Backend** (Django REST API): [Backend-App-Aesthetic](https://github.com/merygon/Aesthetic-Auctions-Backend)
 
 ---
 
