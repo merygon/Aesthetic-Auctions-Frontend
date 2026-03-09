@@ -1,0 +1,157 @@
+/* SEARCH CONTAINER */
+.searchContainer {
+    flex: 1; /* Ocupa todo el espacio restante */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar la barra */
+    align-items: center;
+    /*gap: 1%; */
+    color: #001a40;
+    position: relative; /* Permite que las sugerencias se mantengan dentro */
+}
+
+/* search button */
+.searchContainer button{
+    background: #ffcc00;
+    color:#001a40;
+    border: none;
+    padding: 15px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+.searchContainer button:hover{
+    background: #ffae00;
+}
+
+/* search bar */
+.searchBar {
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 75%; 
+    position: relative; 
+    margin-left: 10%;
+}
+
+
+/* input de texto */
+.searchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    margin: 0 10px;
+    background-color: white;
+    color: #001a40;
+}
+/* selector de categorías */
+.categorySelect {
+    border: none;
+    background: #f0f0f0;
+    padding: 15px;
+    font-size: 13px;
+    border-end-end-radius: 30px;
+    border-top-right-radius: 30px;
+    color: #001a40;
+}
+
+.priceFilters {
+    display: flex;
+    gap: 6px;
+    padding: 1%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.priceInput {
+    width: 80px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    color: #001a40;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+/* MENUS DE CATEGORÍAS */
+.menuCategories{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #1c3f60;
+    gap: 5%;
+    padding: 10px;
+    border-bottom: 1px solid #c7cace;
+    font-weight: bold;
+}
+.menuCategories a {
+    color: #1c3f60;
+    text-decoration: none;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+.menuCategories a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+/* ICONOS */
+.icon {
+    font-size: 25px;
+    color:#001a40;
+    padding-left: 1%;
+    transition: transform 0.3s ease;
+}
+.icon:hover {
+    color: #ffcc00;
+    transform: scale(1.5);
+}
+
+
+
+.suggestions {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 5px; /* Separa las sugerencias del input */
+    z-index: 100; /* Ajustado para no solaparse con otros elementos */
+    top: 100%; /* Hace que las sugerencias se posicionen justo debajo del input */
+    left: 0; /* Alinea las sugerencias con el input */
+  }
+  
+  .suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: left;
+  }
+  
+  .suggestionItem:hover {
+    background: #f0f0f0;
+  }
+
+.search-resutls.main {
+    width: 65%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.noResults {
+    color:#ff4d4d;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}

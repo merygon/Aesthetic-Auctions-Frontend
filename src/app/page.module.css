@@ -1,0 +1,151 @@
+
+/*-------------- Main -----------------*/ 
+/*Grid Layout */
+.mainHomePage{
+  display: grid;
+  grid-template-rows: auto auto auto; /* 3 filas */
+  gap: 20px;
+  padding: 20px;    
+  color: #001a40;
+  background-color: white;
+}
+
+/* Fila superior con 2 columnas */
+.gridTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas */
+  gap: 20px;
+}
+
+/* Secciones dentro del grid (primeras 2 secciones)*/
+.featuredAuctions {
+  background: #1c3f60;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(28, 63, 96);
+  max-width: 100%;
+}
+
+/* MENUS DE CATEGORÍAS */
+.menuCategories{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: #1c3f60;
+  gap: 5%;
+  padding: 10px;
+  border-bottom: 1px solid #c7cace;
+  font-weight: bold;
+}
+.menuCategories a {
+  color: #1c3f60;
+  text-decoration: none;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+.menuCategories a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+.categoryItem {
+  display: flex;
+  flex-direction: column; /* Apila imagen y texto en columna */
+  align-items: center; /* Centra la imagen y el texto */
+  text-align: center;
+}
+.categoryName {
+  padding: 3px;
+  font-size: 15px;
+  color: #1c3f60;
+  transition: transform 0.3s ease, text-decoration 0.3s ease;
+}
+.categoryItem:hover .roundImage {
+  transform: scale(1.2);
+}
+.categoryItem:hover .categoryName {
+  text-decoration: underline;
+  transform: scale(1.1);
+  background-color: #ffcc00;
+  border-radius: 15%;
+}
+
+
+/* Manejo imagenes */
+.roundImage {
+  width: 120px; /* Ajusta el tamaño según sea necesario */
+  height: 120px;
+  object-fit: cover; /* Asegura que la imagen cubra todo el área circular */
+  border-radius: 50%; /* Convierte la imagen en un círculo */
+}
+
+.decorativeImage {
+  display: flex;
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  max-height: 100%; /* Ajusta la altura máxima */
+  object-fit: cover; /* Corta la imagen si es necesario para llenar el espacio */
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*CAMBIAR A COMPONENTS*/
+/*  ARTICULOS */
+/* contenedores de los articulos en cada seccion del grid (dos tipos, los de la primera fila y los de la segunda)*/
+.articlesContainer {
+  display: flex;
+  padding: 10px;
+  gap: 10px; /* Espacio entre artículos */
+  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+  flex-wrap: nowrap; /* Asegura que los elementos no se pasen a una nueva fila */
+  white-space: nowrap; /* Evita que los elementos se envuelvan en nuevas líneas */
+  padding-bottom: 10px; /* Espacio extra para evitar cortes */
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* Card con toda la info de un articulo: imagen, precio, nombre (utilizado en main page y detalle de subasta)*/
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: #001a40;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(18, 40, 60, 0.15);
+  width: 200px; /* Mantiene un tamaño fijo */
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articleTitle,
+.articleCard:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+/* Mini descripción articulos */
+.articleTitle, .articlePrice {
+    font-size: 14px;
+    font-weight: bold;
+    color: #001a40;
+    overflow-wrap: break-word; /* Rompe las palabras largas por si es demasiado larga para la caja en donde está*/
+    white-space: normal; /* Permite saltos de línea */
+    max-width: 100%; /* Evita que el texto se extienda fuera del contenedor */
+    margin-inline: 5%;
+    margin-top: 5px;
+}
+.articlePrice{
+  margin-top: 0px;
+  font-size: 18px; /* Más grande que el título */
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Detalles sobre estas card IMAGENES*/
+.articleCard img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Asegura que las imágenes sean siempre cuadradas */
+    object-fit: cover; /*reescala las imagenes para que no deformen*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

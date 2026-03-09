@@ -1,0 +1,88 @@
+/*-------------- Main -----------------*/ 
+.mainLogin {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+    color: #002b5c;
+}
+
+
+/*----------- Left column ----------*/
+.leftColumn {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*----------- Buttons ----------*/
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1c3f60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #001a40;
+}
+
+/*----------- Form ----------*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre cada elemento del formulario */
+}
+
+/* Asegurar que los selectores aparezcan debajo de sus etiquetas */
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacio entre el label y el input/select */
+}
+
+/* .form input, .form select {
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    
+} */
+.input {
+    display:none;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+
+/*------------ Right Column ------------*/
+.rightColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.decorativeVideo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+

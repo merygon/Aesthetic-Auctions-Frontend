@@ -1,0 +1,52 @@
+
+.userDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #3141b9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.userEmail,
+.userAddress,
+.userBio {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #1c3f60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #001a40;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;       /* Espacio entre los botones */
+    padding: 1%; /* Separación superior para separar de otros contenidos */
+    background-color: white;
+}
+  

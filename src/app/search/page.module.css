@@ -1,0 +1,57 @@
+.searchResultsMain {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.resultCard {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;  
+    padding: 15px;  
+    border-radius: 8px;  
+    gap: 15px;  
+}
+
+.itemImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /*evita distorsion*/
+    border-radius: 8px;
+}
+
+.itemInfo {
+    flex-grow: 1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1c3f60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #ffae00;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: #333;
+}

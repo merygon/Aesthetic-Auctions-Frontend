@@ -1,0 +1,112 @@
+/*---------------- Header ------------------*/
+.header {
+    width: 100%;
+    background-color: white;
+    color: #1c3f60;
+}
+
+/* HEADER SUPERIOR */
+.topHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.topHeader a {
+    margin-left: 15px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+.topHeader button {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+/* HEADER PRINCIPAL */
+.mainHeader {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: #1c3f60;
+    color: white;
+}
+.mainHeader button{
+    background: #ffcc00;
+    color:#001a40;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+}
+.mainHeader button:hover{
+    background: #ffae00;
+}
+.SimpleHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 🔹 Asegura que los iconos se alineen a la derecha */
+    padding: 25px;
+    background-color: #1c3f60;
+    color: white;
+}
+
+
+/* Contenedor del logo y el texto */
+.logoContainer {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    gap: 10px; /* Espacio entre el logo y el texto */
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+.logoContainer a:hover {
+    transform: scale(1.2);
+}
+.logoText {
+    display: flex;
+    flex-direction: column; /* Coloca una palabra encima de la otra */
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1; /* Reduce espacio entre las palabras */
+}
+
+/* ICONOS */
+.icon {
+    font-size: 20px;
+    color:#001a40;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+.icon:hover {
+    color: #ffcc00;
+    transform: scale(1.5);
+}
+
+/* MENUS DE CATEGORÍAS */
+.menuCategories{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #1c3f60;
+    gap: 5%;
+    padding: 10px;
+    border-bottom: 1px solid #c7cace;
+    font-weight: bold;
+  }
+  .menuCategories a {
+    color: #1c3f60;
+    text-decoration: none;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+  }
+  .menuCategories a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
